@@ -74,9 +74,9 @@ III. Adding the RAUC Update Framework to Your Device
 To prepare your device for using RAUC as its update handler,
 you have to follow at least the following steps:
 
-1. Add the `rauc` package to your systems image recipe:
+1. Add the `rauc` and `rauc-service` packages to your systems image recipe:
 
-  IMAGE_INSTALL_append = " rauc"
+  IMAGE_INSTALL_append = " rauc rauc-service"
 
 2. Add a rauc_%.bbappend in your device-specific (BSP) layer
 that installs your RAUC system configuration file under
